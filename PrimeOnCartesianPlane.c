@@ -181,7 +181,7 @@ for (int i = 0; i<MAX_NUM; i++){
     //printf("\ni: %d --> %d",i, checkIfPrime(i));
 */
 int **arr;
-int size = 400;
+int size = 600;
 Origin *origin = malloc(sizeof(Origin));
 origin->X = 0;
 origin->Y = 0;
@@ -191,6 +191,8 @@ printf("i: %d --> origin X-> %d, Y-> %d\n",i,origin->X,origin->Y);
     }*/
 primeGridPlacer(origin, arr, size);
 printf("BP5");
+free(origin);
+free(arr);
 return 0;
 
 }
